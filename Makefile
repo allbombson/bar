@@ -6,7 +6,7 @@ ifneq "$(GIT_DESC)" ""
 	VERSION=$(GIT_DESC)
 endif
 
-CC	?= gcc
+CC	?= clang
 CFLAGS += -Wall -std=c99 -Os -DVERSION="\"$(VERSION)\""
 LDFLAGS += -lxcb -lxcb-xinerama -lxcb-randr
 CFDEBUG = -g3 -pedantic -Wall -Wunused-parameter -Wlong-long \
